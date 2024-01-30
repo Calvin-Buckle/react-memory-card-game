@@ -15,15 +15,20 @@ function App() {
 
     return (
         <>
+        <div id="main">
             {dataArr.map(character => (
                 <CreateCard
                     key={character.id}
                     character={character.image}
-                    name={character.name}
-                    species={character.species}
-                    status={character.status}
+                    name={ character.name}
+                    species={'Species: '+ character.species}
+                    status={'Status: '+ character.status}
+                    type={'Type: '+ character.type}
+                    origin={'Origin: '+ character.origin.name}
+                    created={'Created: '+ character.created}
                 />
             ))}
+            </div>
         </>
     );
 }
