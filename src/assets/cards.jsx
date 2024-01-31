@@ -1,10 +1,10 @@
 
 
 
-const CreateCard = ({character, name, species, status, type, origin, created}) => {
+const CreateCard = ({character, name, species, status, origin, created}) => {
     return(
    
-        <div className="card">
+        <button className="card">
        
        <img src={character}></img>
   
@@ -12,10 +12,9 @@ const CreateCard = ({character, name, species, status, type, origin, created}) =
        <div className="description">
         <h4 className="species">{species}</h4>
         <h4 className="status">{status}</h4>
-        <h4 className="type">{type}</h4>
         <h4 className="origin">{origin}</h4>
         <h4 className="created">{created}</h4>
-        </div></div>
+        </div></button>
        
     )
 }

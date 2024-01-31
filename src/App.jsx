@@ -16,6 +16,7 @@ function App() {
     return (
         <>
         <div id="main">
+            <div id="deck">
             {dataArr.map(character => (
                 <CreateCard
                     key={character.id}
@@ -23,14 +24,15 @@ function App() {
                     name={ character.name}
                     species={'Species: '+ character.species}
                     status={'Status: '+ character.status}
-                    type={'Type: '+ character.type}
                     origin={'Origin: '+ character.origin.name}
                     created={'Created: '+ character.created}
                 />
             ))}
+            </div>
             </div>
         </>
     );
 }
 
 export default App;
+
