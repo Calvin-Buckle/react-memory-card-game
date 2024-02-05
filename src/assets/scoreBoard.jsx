@@ -1,16 +1,20 @@
+const ScoreBoard = ({ scoreProp, highScoreProp }) => {
+    return (
+        <div id="scoreBoardContainer">
+            <img src="/Logo.png" id="logo" alt="Logo"></img>
+            <div id="scoreContainer">
+                <h1>Score:</h1>
+                <div id="score">{scoreProp}</div>
+                <img src="/laserGun.png" id="scoreLogo" alt="Score Logo" />
+            </div>
 
+            <div id="highScoreContainer">
+                <h1>Highscore:</h1>
+                <div id="highScore">{highScoreProp}</div>
+                <img src="/plumbus.png" id="highScoreLogo" alt="Highscore Logo" />
+            </div>
+        </div>
+    );
+};
 
-const ScoreBoard = () => {
-    return(
-    <div id="scoreContainer">
-         <img src="/Logo.png" id="logo"></img>
-         <img src="/laserGun.png" id="scoreLogo"/>
-        <div id="score">0</div>
-        <img src="/plumbus.png" id="highScoreLogo"/>
-        <div id="highScore">0</div>
-    </div>
-    )
-}
-
-
-export default ScoreBoard
+export default ScoreBoard;

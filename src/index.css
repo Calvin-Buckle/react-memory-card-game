@@ -1,13 +1,20 @@
+@font-face {
+    font-family: 'WubbaLubbaDubDub';
+    src: url(./assets/fonts/WubbaLubbaDubDub.ttf) format('truetype');
+   
+  }
 body{
     margin:0px;
+   
 }
 #main{
     width:100%;
     background-image:url(/public/spacePortal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+   
 }
-#scoreContainer{
+#scoreBoardContainer{
     display: flex;
     height: 100px;
     width:100%;
@@ -15,8 +22,23 @@ body{
     color: #42b3c9;
     justify-content: space-around;
     align-items: center;
+    font-family:'WubbaLubbaDubDub';
+ 
 }
 
+#scoreContainer{
+    display: flex;
+    gap:10px;
+    width: 200px;
+    align-items: center;
+}
+
+#highScoreContainer{
+    display: flex;
+    gap:10px;
+    width: 250px;
+    align-items: center;
+}
 #score{
     font-size:50px
 }
