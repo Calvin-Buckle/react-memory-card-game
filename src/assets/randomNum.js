@@ -1,5 +1,5 @@
 function RandomNum() {
-    return Math.floor(Math.random() * 21);
+    return Math.floor(Math.random() * 20);
     
 }
 

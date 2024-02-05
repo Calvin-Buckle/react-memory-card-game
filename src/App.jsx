@@ -23,7 +23,7 @@ function App() {
             const index = RandomNum();
             cards.push(
                 <CreateCard
-                    key={dataArr[index].id}
+                    key={dataArr[index].id + '-' + i}
                     character={dataArr[index].image}
                     name={ dataArr[index].name}
                     species={'Species: '+ dataArr[index].species}
