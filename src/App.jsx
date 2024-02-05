@@ -5,9 +5,11 @@ import RandomNum from "./assets/randomNum"
 
 function App() {
 
-    
-   
     const [dataArr, setDataArr] = useState([]);
+    
+    const handleCardClick = () => {
+        setDataArr([...dataArr])
+    }
 
     useEffect(() => {
         fetch('https://rickandmortyapi.com/api/character')
@@ -30,6 +32,7 @@ function App() {
                     status={'Status: '+ dataArr[index].status}
                     origin={'Origin: '+ dataArr[index].origin.name}
                     created={'Created: '+ dataArr[index].created}
+                    onClick={handleCardClick}
                 /> 
             )
         }
